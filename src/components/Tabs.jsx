@@ -10,7 +10,7 @@ function Tabs() {
       <div className=" max-w-xl w-full flex overflow-auto rounded-md">
         <Skills setState={setState} />
       </div>
-      <div className="bg-gradient-to-br from-black to-gray-800 bg-blend-hard-light capitalize max-w-xl overflow-hidden p-10 w-full h-72 flex items-center justify-center drop-shadow-xl rounded-2xl mt-28 animate-bounce">
+      <div className="bg-gradient-to-br from-black to-gray-800 bg-blend-hard-light capitalize max-w-xl overflow-hidden p-10 w-full h-72 flex items-center justify-center drop-shadow-xl rounded-2xl mt-28">
         <Cards state={state} />
       </div>
     </div>
