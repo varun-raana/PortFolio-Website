@@ -8,7 +8,7 @@ function Links({ isVisible }) {
   ];
   return (
     <div
-      className={`md:flex md:max-w-lg items-center justify-between md:pb-0 pb-4 left-0 md:space-x-6 absolute md:static w-72 md:z-auto z-[1] md:h-full h-auto transition-all duration-500 ease-linear ${
+      className={`md:flex md:max-w-lg items-center justify-between md:pb-0 pb-4 left-0 md:space-x-6 absolute md:static md:w-full w-72 md:z-auto z-[1] md:h-full h-auto transition-all duration-500 ease-linear ${
         isVisible
           ? "left-0  antialiased opacity-100"
           : "left-[-100%] md:opacity-100 opacity-0"
