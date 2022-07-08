@@ -1,5 +1,7 @@
+import Tabs from "../components/Tabs";
+
 function About() {
-  return <div>hello</div>;
+  return <Tabs />;
 }
 
 export default About;
