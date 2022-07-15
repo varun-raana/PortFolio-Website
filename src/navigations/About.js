@@ -1,7 +1,7 @@
-import Tabs from "../components/Tabs";
+import Cards from "../components/about/Cards";
 
 function About() {
-  return <Tabs />;
+  return <Cards />;
 }
 
 export default About;

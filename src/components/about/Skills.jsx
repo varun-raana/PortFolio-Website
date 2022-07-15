@@ -1,46 +1,25 @@
 import React from "react";
-import Button from "../Button";
 
-function Skills({ setState, state }) {
+function Skills({ item }) {
   return (
-    <>
-      <Button
-        className={` md:text-base text-xs py-2 px-5 ${
-          state === 1
-            ? "bg-gradient-to-br from-black to-gray-800 text-white"
-            : "text-black"
-        } focus: bg-blend-hard-light uppercase rounded-md text-md tracking-wider font-black flex-none`}
-        onClick={() => setState(1)}>
-        languages
-      </Button>
-      <Button
-        className={` md:text-base text-xs py-2 px-5 ${
-          state === 2
-            ? "bg-gradient-to-br from-black to-gray-800 text-white"
-            : "text-black"
-        } focus: bg-blend-hard-light uppercase rounded-md text-md tracking-wider font-black flex-none`}
-        onClick={() => setState(2)}>
-        styling
-      </Button>
-      <Button
-        className={` md:text-base text-xs py-2 px-5 ${
-          state === 3
-            ? "bg-gradient-to-br from-black to-gray-800 text-white"
-            : "text-black"
-        } focus: bg-blend-hard-light uppercase rounded-md text-md tracking-wider font-black flex-none`}
-        onClick={() => setState(3)}>
-        databases
-      </Button>
-      <Button
-        className={` md:text-base text-xs py-2 px-5 ${
-          state === 4
-            ? "bg-gradient-to-br from-black to-gray-800 text-white"
-            : "text-black"
-        } focus: bg-blend-hard-light uppercase rounded-md text-md tracking-wider font-black flex-none`}
-        onClick={() => setState(4)}>
-        tools
-      </Button>
-    </>
+    <div className="h-full flex gap-10 flex-none w-full px-10 py-5 overflow-auto select-none">
+      {item.option.map((item, index) => {
+        return (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center gap-3 h-36 flex-none py-5 first:ml-0 ml-12">
+            <img
+              src={item.image}
+              className="w-20 flex flex-none items-center justify-center h-full object-contain overflow-hidden"
+              alt={item.name}
+            />
+            <p className="text-gray-500 tracking-widest mt-auto capitalize font-medium md:text-sm text-xs">
+              {item.value}
+            </p>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 

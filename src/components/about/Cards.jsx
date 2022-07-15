@@ -1,45 +1,23 @@
-import Card from "../Card";
-import { Profile } from "../../Profile";
+import { skills } from "../../data/Profile";
+import Card from "../../UI/Card";
+import Skills from "./Skills";
 
-function Cards({ state }) {
-  const profile = Profile.skills;
-  function skillHandler(skill) {
-    return skill.map((item, index) => {
-      return (
-        <p className="mt-2 uppercase" key={index}>
-          {item}
-        </p>
-      );
-    });
-  }
-
+function Cards() {
   return (
-    <>
-      <Card
-        className={`${
-          state === 1 ? "block" : "hidden"
-        } text-white font-black flex flex-col items-start justify-center tracking-[4px]`}>
-        {skillHandler(profile.frontend)}
-      </Card>
-      <Card
-        className={`${
-          state === 2 ? "block" : "hidden"
-        } text-white font-black flex flex-col items-start justify-center capitalize tracking-[4px]`}>
-        {skillHandler(profile.styling)}
-      </Card>
-      <Card
-        className={`${
-          state === 3 ? "block" : "hidden"
-        } text-white font-black flex flex-col items-start justify-center capitalize tracking-[4px]`}>
-        {skillHandler(profile.database)}
-      </Card>
-      <Card
-        className={`${
-          state === 4 ? "block" : "hidden"
-        } text-white font-black flex flex-col items-start justify-center capitalize tracking-[4px]`}>
-        {skillHandler(profile.tools)}
-      </Card>
-    </>
+    <div className="h-full overflow-auto py-10 md:px-20 px-5">
+      {skills.map((item, index) => {
+        return (
+          <Card
+            key={index}
+            className=" font-bold text-white p-5 flex flex-col gap-2 mt-8 drop-shadow bg-white">
+            <div className="uppercase border-b-2 pb-3 text-gray-700 tracking-widest font-black">
+              {item.name}
+            </div>
+            <Skills item={item} />
+          </Card>
+        );
+      })}
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-import Title from "../Title";
+import Title from "../../UI/Title";
 import { Link } from "react-router-dom";
 
 function SelfInfo() {

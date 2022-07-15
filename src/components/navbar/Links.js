@@ -1,5 +1,5 @@
-import Button from "../Button";
-import Link from "../Link";
+import Button from "../../UI/Button";
+import Link from "../../UI/Link";
 
 function Links({ isVisible }) {
   let links = [

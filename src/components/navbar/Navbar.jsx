@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import Link from "../Link";
+import Link from "../../UI/Link";
 import Links from "./Links";
 
 function Navbar() {
