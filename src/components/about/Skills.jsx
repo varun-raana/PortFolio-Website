@@ -10,7 +10,7 @@ function Skills({ item }) {
             className="flex flex-col items-center justify-center gap-3 h-36 flex-none py-5 first:ml-0 ml-12">
             <img
               src={item.image}
-              className="w-20 flex flex-none items-center justify-center h-full object-contain overflow-hidden"
+              className="md:w-20 w-16 flex flex-none items-center justify-center h-full object-contain overflow-hidden"
               alt={item.name}
             />
             <p className="text-gray-500 tracking-widest mt-auto capitalize font-medium md:text-sm text-xs">
