@@ -9,7 +9,7 @@ function Footer() {
             href="mailto:varunrana829@gmail.com"
             rel="noreferrer"
             target={"_blank"}
-            className="text-amber-600 hover:text-white transition-all duration-300 ease-in tracking-widest font-black">
+            className="text-amber-600 hover:text-white transition-all duration-300 ease-in tracking-widest font-black capitalize">
             varunrana829@gmail.com
           </a>
         </div>
