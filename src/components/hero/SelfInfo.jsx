@@ -9,13 +9,13 @@ function SelfInfo() {
         code. i've made
         <Link
           to={"/my-projects"}
-          className="underline decoration-wavy decoration-blue-500 md:text-3xl mx-3 hover:decoration-orange-500 transition-all duration-300 ease-in-out font-medium">
+          className="underline decoration-wavy decoration-blue-500 md:text-3xl text-lg mx-3 hover:decoration-orange-500 transition-all duration-300 ease-in-out font-medium">
           web applications
         </Link>{" "}
         and{" "}
         <Link
           to={"/my-projects"}
-          className="underline decoration-wavy decoration-orange-500 md:text-3xl mx-3 hover:decoration-blue-500 transition-all duration-300 ease-in-out font-medium">
+          className="underline decoration-wavy decoration-orange-500 md:text-3xl text-lg mx-3 hover:decoration-blue-500 transition-all duration-300 ease-in-out font-medium">
           mobile apps.
         </Link>
       </Title>
