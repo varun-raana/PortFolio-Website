@@ -3,7 +3,7 @@ import React from "react";
 function Skills({ item }) {
   return (
     <div className="h-full flex gap-10 flex-none w-full px-10 py-5 overflow-auto select-none">
-      {item.option.map((item, index) => {
+      {item?.option.map((item, index) => {
         return (
           <div
             key={index}

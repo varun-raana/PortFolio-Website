@@ -8,13 +8,11 @@ import express from "../assets/logo/express-original-wordmark.svg";
 import node from "../assets/logo/node-js.svg";
 import mongoDB from "../assets/logo/mongodb-original-wordmark.svg";
 import mysql from "../assets/logo/mysql-original-wordmark.svg";
-import bootstrap from "../assets/logo/bootstrap-original-wordmark.svg";
 import git from "../assets/logo/git.svg";
 import gitHUB from "../assets/logo/github-original-wordmark.svg";
-import heroku from "../assets/logo/heroku-original-wordmark.svg";
 import tailwindcss from "../assets/logo/tailwind-css.svg";
-import canva from "../assets/logo/canva-original.svg";
-import figma from "../assets/logo/figma-original.svg";
+
+
 
 export const Profile = {
   socials: {
@@ -23,39 +21,6 @@ export const Profile = {
     gitHub: "https://github.com/varunrana123",
     instagram: "https://www.instagram.com/varun8048/",
   },
-  experience: ["jan-2022 - Present"],
-  // projects: [
-  //   { name: "starbucks", technologyUsed: ["html", "css", "javascript"] },
-  //   {
-  //     name: "elite vibes",
-  //     technologyUsed: [
-  //       "html",
-  //       "css",
-  //       "javascript",
-  //       "nodejs",
-  //       "mongoDB",
-  //       "express",
-  //     ],
-  //     image: { header: { eliteVibes } },
-  //   },
-  //   {
-  //     name: "elite vibes with react",
-  //     technologyUsed: [
-  //       "html",
-  //       "css",
-  //       "javascript",
-  //       "react",
-  //       "nodejs",
-  //       "express",
-  //       "mongoDB",
-  //       "firebase",
-  //     ],
-  //     image: {
-  //       header: { eliteVibesReact },
-  //       alt: "Elite Vibes || event management",
-  //     },
-  //   },
-  // ],
 };
 
 export const skills = [
@@ -78,10 +43,6 @@ export const skills = [
       {
         image: css,
         value: "css3",
-      },
-      {
-        image: bootstrap,
-        value: "bootstrap",
       },
       {
         image: tailwindcss,
@@ -150,18 +111,6 @@ export const skills = [
       {
         image: gitHUB,
         value: "gitHUB",
-      },
-      {
-        image: heroku,
-        value: "heroku",
-      },
-      {
-        image: canva,
-        value: "canva",
-      },
-      {
-        image: figma,
-        value: "figma",
       },
     ],
   },
