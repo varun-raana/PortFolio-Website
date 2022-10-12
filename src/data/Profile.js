@@ -14,6 +14,7 @@ import githubUserFinder from "../assets/images/projects-img/find-github-profile.
 import eliteVibes from "../assets/images/projects-img/elite-vibes.png";
 import pomodroTimer from "../assets/images/projects-img/pomodrotimer.png";
 import portfolio from "../assets/images/projects-img/portfolio_project.png";
+import portfolioOne from "../assets/images/projects-img/portfolio.png";
 import onboardingSteps from "../assets/images/projects-img/onBoarding.png";
 
 export const skills = [
@@ -141,6 +142,7 @@ export const projects = [
 			"React-spinners",
 			"TailwindCss",
 			"NodeJs",
+			"react-router",
 			"firebase",
 			"mongoDB",
 			"Express.js",
@@ -160,6 +162,7 @@ export const projects = [
 			"ReactJs",
 			"React-spinners",
 			"firebase",
+			"react-router",
 			"TailwindCss",
 			"Git",
 			"GitHub",
@@ -169,7 +172,16 @@ export const projects = [
 		sourceCode: "https://github.com/varun-raana/pomodro-timer-app",
 	},
 	{
-		name: "personal portfolio",
+		name: "portfolio One",
+		url: "https://varun-rana.netlify.app",
+		projectImg: portfolioOne,
+		skills: ["ReactJs", "TailwindCss", "react-router", "Git", "GitHub"],
+		desc:
+			"A Simple, Effective and Easier way to get hired by the top companies is by showing them your skills as well a good portolio helps more.",
+		sourceCode: "https://github.com/varun-raana/PortFolio-Website",
+	},
+	{
+		name: " portfolio two",
 		url: "https://varun-rana-portfolio.netlify.app",
 		projectImg: portfolio,
 		skills: ["ReactJs", "TailwindCss", "Git", "GitHub"],

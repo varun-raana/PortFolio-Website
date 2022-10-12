@@ -61,7 +61,7 @@ function ProjectsGrid() {
 												target={"_blank"}
 												rel="noreferrer"
 												className=" py-2 px-3 rounded-md outline-none border-none tracking-wider text-sm inline-block capitalize text-gray-900 ">
-												get code
+												code
 											</a>
 										</div>
 									</div>
